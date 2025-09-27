@@ -156,7 +156,7 @@ mod impl_futures {
     }
 }
 
-/// The receiver half of a watch channel.  Can recieve state updates with the postage::Sink trait.
+/// The receiver half of a watch channel.  Can recieve state updates with the postage::Stream trait.
 ///
 /// The reciever will be woken when new values arive, but is not guaranteed to recieve every message.
 pub struct Receiver<T> {
